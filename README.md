@@ -17,6 +17,8 @@ In the tenth frame a player who rolls a spare or strike is allowed to roll the e
 balls to complete the frame. However no more than three balls can be rolled in
 tenth frame.
 
+[Code Dojo - Demonstration Video](https://www.youtube.com/watch?v=OPGTPQ4kURU) 
+
 ## Getting Started
 1. Fork and clone this repository
 1. Write your tests in src/test/java/com/galvanize/bowling/GameTest.java
@@ -31,4 +33,19 @@ tenth frame.
 1. one strike, two rolls with pins down, and the rest (16) gutters
 1. perfect game - 10 strikes + two 10s (strikes)
 
-[Code Dojo - Demonstration Video](https://www.youtube.com/watch?v=OPGTPQ4kURU) 
+### For Overachievers
+Make the application interactive using the command line.
+
+For example, start the game by calling the game application class, then loop scanning input 
+from the command line.  After each roll, the user inputs the number of pins knocked down.  Score 
+the game one roll at a time until 10 frames are completed.  You will need to handle the case for a spare, 
+a strike, and the final frame (max three rolls).  After each roll, print a score sheet like you
+see at the bowling alley.
+```
+Bowler: Joe Bowler
+|  1   |  2   |  3   |  4   |  5   |  6   |  7   |  8   |  9   |  10   |
+|------|------|------|------|------|------|------|------|------|-------|
+|  1|4 |  4|5 |  6|/ |  5|/ |   X  |  0|1 |  7|/ |  6|/ |   X  | 2|/|6 |
+|   5  |   14 |   29 |   49 |  60  |   61 |   77 |   97 |  117 |  133  |
+|------|------|------|------|------|------|------|------|------|-------|
+```
