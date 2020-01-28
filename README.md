@@ -20,7 +20,7 @@ tenth frame.
 ## Getting Started
 1. Fork and clone this repository
 1. Write your tests in src/test/java/com/galvanize/bowling/GameTest.java
-1. Implement your tests in src/main/java/com/galvanize/bowling/Gaje.java
+1. Implement your tests in src/main/java/com/galvanize/bowling/Game.java
 
 ### Acceptance Criteria
 1. create a new game
