@@ -1,5 +1,11 @@
 # The Bowling Game Kata (Java) - Uncle Bob Martin
 
+
+## Objective
+Use TDD to create a simple application to score a game of bowling
+
+![Bowling Scoresheet](assets/new-bowling-scoresheet.png)
+   
 ## Scoring Bowling.
 The game consists of 10 frames as shown above. In each frame the player has
 two opportunities to knock down 10 pins. The score for the frame is the total
@@ -17,7 +23,11 @@ In the tenth frame a player who rolls a spare or strike is allowed to roll the e
 balls to complete the frame. However no more than three balls can be rolled in
 tenth frame.
 
-[Code Dojo - Demonstration Video](https://www.youtube.com/watch?v=OPGTPQ4kURU) 
+[Video: How to keep score in bowling](https://www.youtube.com/watch?v=aBe71sD8o8c)
+
+[Online Bowling Score Calculator](https://www.bowlinggenius.com/)
+
+[comment]: <> ([Code Dojo - Demonstration Video]&#40;https://www.youtube.com/watch?v=OPGTPQ4kURU&#41; )
 
 ## Getting Started
 1. Fork and clone this repository
@@ -25,27 +35,17 @@ tenth frame.
 1. Implement your tests in src/main/java/com/galvanize/bowling/Game.java
 
 ### Acceptance Criteria
-1. create a new game
-1. can record rolling of ball
-1. all (20) gutters
-1. all (20) ones
-1. one spare, one roll with pins down, and the rest (17) gutters
-1. one strike, two rolls with pins down, and the rest (16) gutters
-1. perfect game - 10 strikes + two 10s (strikes)
-
-### For Overachievers
-Make the application interactive using the command line.
-
-For example, start the game by calling the game application class, then loop scanning input 
-from the command line.  After each roll, the user inputs the number of pins knocked down.  Score 
-the game one roll at a time until 10 frames are completed.  You will need to handle the case for a spare, 
-a strike, and the final frame (max three rolls).  After each roll, print a score sheet like you
-see at the bowling alley.
-```
-Bowler: Joe Bowler
-|  1   |  2   |  3   |  4   |  5   |  6   |  7   |  8   |  9   |  10   |
-|------|------|------|------|------|------|------|------|------|-------|
-|  1|4 |  4|5 |  6|/ |  5|/ |   X  |  0|1 |  7|/ |  6|/ |   X  | 2|/|6 |
-|   5  |   14 |   29 |   49 |  60  |   61 |   77 |   97 |  117 |  133  |
-|------|------|------|------|------|------|------|------|------|-------|
-```
+1. Can create a new game
+    - Score should be zero
+1. Can record rolling of ball
+1. Can score a game of all (20) gutters
+    - Score of zero
+1. Can score a game of all (20) ones
+    - Score of 20
+1. Can score a game with one spare (say two fives), followed by two rolls with three pins down each, and the rest (17) gutters
+    - Score of 19
+1. Can score a game with one strike, followed by two rolls with three pins down each, and the rest (16) gutters
+    - Score of 22
+1. Can score a perfect game - ten strikes + two bonus 10s in the tenth frame
+    - Score of 300
+   
