@@ -47,7 +47,7 @@ public class Game {
     private void calcPrevPrevStrike(Frame currentFrame) {
         Frame previousFrame = this.getPreviousFrame(currentFrame);
         Frame prevPreviousFrame = previousFrame != null ? this.getPreviousFrame(previousFrame) : null;
-        if(prevPreviousFrame != null) {
+        if(prevPreviousFrame != null && prevPreviousFrame.isStrike()) {
             prevPreviousFrame.addScore(currentFrame.getScore());
         }
     }

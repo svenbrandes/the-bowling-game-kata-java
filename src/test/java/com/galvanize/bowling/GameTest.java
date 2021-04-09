@@ -93,6 +93,24 @@ public class GameTest {
         assertEquals(expected, actual);
     }
 
+
+    @Test
+    void roll4Gutters3Strikes_rtn60() {
+        game.roll(0);
+        game.roll(0);
+        game.roll(0);
+        game.roll(0);
+        game.roll(10);
+        game.roll(10);
+        game.roll(10);
+        for(int i=0; i<10; i++) {
+            game.roll(0);
+        }
+        int expected = 60;
+        int actual = game.getTotalScore();
+        assertEquals(expected, actual);
+    }
+
     @Test
     void roll9Strikes_rtn240() {
         for(int i=0; i<9; i++) {
